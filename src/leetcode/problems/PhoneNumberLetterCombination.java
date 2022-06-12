@@ -7,7 +7,7 @@ import java.util.List;
 class PhoneNumberLetterCombination {
 	
 	public static void main(String[] args) {
-		List<String> letterCombinations = new PhoneNumberLetterCombination().letterCombinations("456");
+		List<String> letterCombinations = new PhoneNumberLetterCombination().letterCombinations("123");
 		System.out.println(letterCombinations);
 	}
     public List<String> letterCombinations(String digits) {
