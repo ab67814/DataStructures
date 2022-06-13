@@ -28,22 +28,7 @@ public class MergeSortedLists {
 		    } 
 		    return ans.next;
 		}
-	
-	public ListNode mergeKLists(ListNode[] lists) {
-	    if(lists.length==0){
-	        return null;
-	    }
-	    int interval = 1;
-	    while(interval<lists.length){
-	        System.out.println(lists.length);
-	        for (int i = 0; i + interval< lists.length; i=i+interval*2) {
-	            lists[i]=mergeTwoLists(lists[i],lists[i+interval]);            
-	        }
-	        interval*=2;
-	    }
 
-	    return lists[0];
-	}
     // recursive way to merge
 	public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
 		if(l1 == null) return l2;
