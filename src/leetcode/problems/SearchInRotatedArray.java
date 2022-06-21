@@ -1,8 +1,13 @@
 package leetcode.problems;
 
 public class SearchInRotatedArray {
+	
+	public static void main(String[] args) {
+		int a[] = {4,5,6,7,0,1,2};
+		search(a,0);
+	}
 
-	public int search(int[] A, int target) {
+	public static int search(int[] A, int target) {
 	    int lo = 0;
 	    int hi = A.length - 1;
 	    while (lo < hi) {
@@ -23,6 +28,6 @@ public class SearchInRotatedArray {
 	            }
 	        }
 	    }
-	    return A[lo] == target ? lo : -1;
+ 	    return A[lo] == target ? lo : -1;
 	}
 }
