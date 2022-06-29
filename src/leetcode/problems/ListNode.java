@@ -14,8 +14,9 @@ public class ListNode {
 		next = new ListNode(2);
 		next.next = new ListNode(three);
 		next.next.next = new ListNode(four);
+		next.next.next.next = new ListNode(5);
 	}
-
+	
 	ListNode(int val) {
 		this.val = val;
 	}
